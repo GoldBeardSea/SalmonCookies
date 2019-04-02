@@ -23,11 +23,15 @@ let pikeStore = {
   },
   ammendToDOM: function() {
     let ulEl = document.getElementById(this.nameID);
+    ulEl.textContent = this.name;
     for (let i = 0; i < this.arrayCookieSales.length; i++) {
       let liEl = document.createElement('li');
-      liEl.textContent = this.arrayCookieSales[i];
+      liEl.textContent = hours[i] + ': ' + this.arrayCookieSales[i] + ' cookies';
       ulEl.appendChild(liEl);
     }
+    let liEl = document.createElement('li');
+    liEl.textContent = 'Total: ' + this.totalEstSale + ' cookies';
+    ulEl.appendChild(liEl);
   }
 
 };
@@ -53,11 +57,15 @@ let seatacStore = {
   },
   ammendToDOM: function() {
     let ulEl = document.getElementById(this.nameID);
+    ulEl.textContent = this.name;
     for (let i = 0; i < this.arrayCookieSales.length; i++) {
       let liEl = document.createElement('li');
-      liEl.textContent = this.arrayCookieSales[i];
+      liEl.textContent = hours[i] + ': ' + this.arrayCookieSales[i] + ' cookies';
       ulEl.appendChild(liEl);
     }
+    let liEl = document.createElement('li');
+    liEl.textContent = 'Total: ' + this.totalEstSale + ' cookies';
+    ulEl.appendChild(liEl);
   }
 
 };
@@ -83,11 +91,15 @@ let seacentStore = {
   },
   ammendToDOM: function() {
     let ulEl = document.getElementById(this.nameID);
+    ulEl.textContent = this.name;
     for (let i = 0; i < this.arrayCookieSales.length; i++) {
       let liEl = document.createElement('li');
-      liEl.textContent = this.arrayCookieSales[i];
+      liEl.textContent = hours[i] + ': ' + this.arrayCookieSales[i] + ' cookies';
       ulEl.appendChild(liEl);
     }
+    let liEl = document.createElement('li');
+    liEl.textContent = 'Total: ' + this.totalEstSale + ' cookies';
+    ulEl.appendChild(liEl);
   }
 };
 
@@ -112,11 +124,15 @@ let capStore = {
   },
   ammendToDOM: function() {
     let ulEl = document.getElementById(this.nameID);
+    ulEl.textContent = this.name;
     for (let i = 0; i < this.arrayCookieSales.length; i++) {
       let liEl = document.createElement('li');
-      liEl.textContent = this.arrayCookieSales[i];
+      liEl.textContent = hours[i] + ': ' + this.arrayCookieSales[i] + ' cookies';
       ulEl.appendChild(liEl);
     }
+    let liEl = document.createElement('li');
+    liEl.textContent = 'Total: ' + this.totalEstSale + ' cookies';
+    ulEl.appendChild(liEl);
   }
 
 };
@@ -142,11 +158,15 @@ let alkiStore = {
   },
   ammendToDOM: function() {
     let ulEl = document.getElementById(this.nameID);
+    ulEl.textContent = this.name;
     for (let i = 0; i < this.arrayCookieSales.length; i++) {
       let liEl = document.createElement('li');
-      liEl.textContent = this.arrayCookieSales[i];
+      liEl.textContent = hours[i] + ': ' + this.arrayCookieSales[i] + ' cookies';
       ulEl.appendChild(liEl);
     }
+    let liEl = document.createElement('li');
+    liEl.textContent = 'Total: ' + this.totalEstSale + ' cookies';
+    ulEl.appendChild(liEl);
   }
 
 };
