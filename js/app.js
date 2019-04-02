@@ -170,3 +170,10 @@ let alkiStore = {
   }
 
 };
+
+pikeStore.calcCookieByHour();
+seatacStore.calcCookieByHour();
+seacentStore.calcCookieByHour();
+capStore.calcCookieByHour();
+alkiStore.calcCookieByHour();
+
