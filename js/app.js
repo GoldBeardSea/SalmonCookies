@@ -36,7 +36,7 @@ Store.prototype.renderTable = function() {
     trEl.appendChild(tdElement);
   }
   tdElement = document.createElement('td');
-  tdElement.textContent = this.totalSale;
+  tdElement.textContent = this.totalEstSale;
   trEl.appendChild(tdElement);
   salesTable.appendChild(trEl);
 };
@@ -65,23 +65,21 @@ function tableBuilder () {
 }
 tableBuilder();
 
-
 function callAll() {
   for (let i = 0; i < allStoresInstance.length; i++) {
     allStoresInstance[i].populateSales();
     console.log('I am here');
     allStoresInstance[i].renderTable();
   }
-
 }
 
 callAll();
 
 function calculateColumns () {
-  for (let col = 0; col < hours.length; col++) {
+  for (let i = 0; i < hours.length; i++) {
     let storeAccum = 0;
-    for (let row = 0; allStoresInstance.length; row++) {
-      storeAccum+=allStoresInstance[row].arrayCookieSales[col];
+    for (let j = 0; j < allStoresInstance.length; j++) {
+      storeAccum += allStoresInstance[j].arrayCookieSales[i];
     }
     allStoresSalesByColumn.push(storeAccum);
   }
@@ -99,7 +97,7 @@ function renderColumnTotal() {
     trEl.appendChild(tdEl);
   }
   let tdEl = document.createElement('td');
-  tdEl.textContent = this.allStoresSalesByColumn.reduce(function(accumulator, currentValue) {
+  tdEl.textContent = allStoresSalesByColumn.reduce(function(accumulator, currentValue) {
     return accumulator + currentValue;
   });
   trEl.appendChild(tdEl);
