@@ -75,6 +75,25 @@ function callAll() {
 
 callAll();
 
+
+
+
+function salesForm(event) {
+  event.preventDefault();
+  let formEl = event.target;
+  let newStore = new Store(formEl.name.value, Number(formEl.minCust.value), Number(formEl.maxCust.value), Number(formEl.avgSale.value));
+  document.getElementById('salesTable').deleteRow(-1);
+  newStore.populateSales();
+  newStore.renderTable();
+  allStoresSalesByColumn = [];
+  calculateColumns();
+  renderColumnTotal();
+
+}
+
+let salesFormEl = document.getElementById('addStore');
+salesFormEl.addEventListener('submit', salesForm);
+
 // calculate those columns
 function calculateColumns () {
   for (let i = 0; i < hours.length; i++) {
@@ -83,6 +102,7 @@ function calculateColumns () {
       storeAccum += allStoresInstance[j].arrayCookieSales[i];
     }
     allStoresSalesByColumn.push(storeAccum);
+    console.log(storeAccum);
   }
 }
 calculateColumns();
