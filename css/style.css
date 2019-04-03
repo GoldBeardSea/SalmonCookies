@@ -2,7 +2,7 @@ th, td {
   border: solid red 1px;
   background-color:whitesmoke;
   font-family: sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
   padding: .25rem;
 }
 
@@ -17,8 +17,8 @@ th {
 
 td:nth-of-type(2n+2) {
   border: solid black 1px;
-  background-color: gray;
-  color: white;
+  background-color: red;
+  color: whitesmoke;
 }
 
 td:hover {
