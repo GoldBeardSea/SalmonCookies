@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Cinzel');
-
 html {
   background-color: salmon;
+
 }
 
 body {
   width: 80%;
   margin: 30px 90px 30px 90px;
   background-color: seagreen;
+  font-family: 'Amaric SC', cursive;
 }
 
 header {
@@ -43,6 +43,18 @@ th, td {
 th {
   background-color: salmon;
 }
+
+.merch {
+  width:  275px;
+  height: 175px;
+  background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size:     cover;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+
 
 #salesTable {
   text-align: right;
