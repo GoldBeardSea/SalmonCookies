@@ -1,3 +1,37 @@
+html {
+  background-color: salmon;
+
+}
+
+body {
+  width: 80%;
+  margin: 30px 90px 30px 90px;
+  background-color: seagreen;
+  font-family: 'Amaric SC', cursive;
+  border-radius: 15px;
+}
+
+header {
+  height: 250px;
+}
+
+header div {
+  background-image: url('../img/salmon.png');
+  position: absolute;
+  height: 250px;
+  background-repeat: no-repeat;
+  width: 850px;
+  margin-left: 160px;
+}
+
+div h1 {
+  position: relative;
+  margin: 120px;
+  font-size: 3.5em;
+  text-align: center;
+}
+
+
 th, td {
   border: solid red 1px;
   background-color:whitesmoke;
@@ -8,6 +42,70 @@ th, td {
 
 th {
   background-color: salmon;
+}
+
+.merch {
+  max-width:  276px;
+  max-height: 175px;
+  background-position: 50% 50%;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin: 15px;
+}
+
+#merch {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#merchdiv {
+  max-width: 275px;
+}
+
+#hours {
+  margin: auto;
+  border: solid black 1px;
+  border-radius: 25px;
+  padding: 5px;
+  position: relative;
+  width: 25%;
+  background-color: salmon;
+  color: rgb(9, 84, 223);
+  text-align: center
+}
+
+#location {
+  border:solid black 1px;
+  border-radius: 25px;
+  margin: auto;
+  margin-top: 10px;
+  padding: 5px;
+  position: relative;
+  width: 25%;
+  background-color: seashell;
+  color: red;
+  text-align: center;
+}
+
+#contact {
+  padding: 5px;
+  margin-top: 15px;
+  position: relative;
+  text-align: center;
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 15px;
+  padding: 5px;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 3em;
+  margin: 15px 15px;
 }
 
 #salesTable {
@@ -24,4 +122,40 @@ td:nth-of-type(2n+2) {
 td:hover {
   background-color: yellow;
   color: black;
+}
+
+footer {
+  height: 175px;
+  background-image: url(../img/chinook.jpg);
+  border-radius: 0px 0px 15px 15px;
+}
+
+footer a {
+  font-family: 'monospace';
+  position: relative;
+  font-size: .5em;
+  margin-left: 540px;
+  margin-top: 150px;
+}
+
+section {
+  margin: 30px 30px;
+}
+
+section p {
+  text-indent: 30px;
+}
+
+#firstSection img{
+  max-width: 275px;
+  max-height: 175px;
+  float: left;
+  border-radius: 15px;
+}
+
+#secondSection img {
+  max-width: 275px;
+  max-height: 175px;
+  float: right;
+  border-radius: 15px;
 }
