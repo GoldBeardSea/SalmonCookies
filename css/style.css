@@ -1,3 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Cinzel');
+
+html {
+  background-color: salmon;
+}
+
+body {
+  width: 80%;
+  margin: 30px 90px 30px 90px;
+  background-color: seagreen;
+}
+
+header {
+  height: 250px;
+}
+
+header div {
+  background-image: url('../img/salmon.png');
+  position: absolute;
+  height: 250px;
+  background-repeat: no-repeat;
+  width: 850px;
+  margin-left: 160px;
+}
+
+div h1 {
+  position: relative;
+  margin: 120px;
+  font-size: 3.5em;
+  text-align: center;
+
+}
+
+
 th, td {
   border: solid red 1px;
   background-color:whitesmoke;
